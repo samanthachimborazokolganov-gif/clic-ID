@@ -511,14 +511,14 @@ button, input, select, textarea {
 
 .hero-mascot-corner {
   position: absolute;
-  top: -22px;
-  right: -18px;
-  width: 82px;
-  height: 82px;
-  border-radius: 50%;
+  top: -32px;
+  right: -26px;
+  width: 155px;
+  height: 155px;
+  border-radius: 26px;
   background: #ffffff;
-  padding: 4px;
-  box-shadow: var(--shadow-xl);
+  padding: 5px;
+  box-shadow: 0 18px 38px rgba(109, 40, 217, 0.28);
   border: 3px solid var(--primary);
   z-index: 3;
   animation: mascotFloat 3.5s ease-in-out infinite;
@@ -527,26 +527,30 @@ button, input, select, textarea {
 .hero-mascot-corner img {
   width: 100%;
   height: 100%;
-  border-radius: 50%;
+  border-radius: 20px;
   object-fit: cover;
 }
 
 .mini-mascot-avatar {
-  width: 48px;
-  height: 48px;
-  min-width: 48px;
-  border-radius: 50%;
+  width: 96px;
+  height: 96px;
+  min-width: 96px;
+  border-radius: 22px;
   object-fit: cover;
-  border: 2px solid var(--primary);
+  border: 3px solid var(--primary);
   background: #ffffff;
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--shadow-md);
 }
 
 .calc-mascot-tip {
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-top: 8px;
+  gap: 16px;
+  margin-top: 12px;
+  background: var(--primary-subtle);
+  padding: 12px 16px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--primary-soft);
 }
 
 @keyframes mascotFloat {
@@ -555,13 +559,13 @@ button, input, select, textarea {
 }
 
 .cta-mascot-badge {
-  width: 84px;
-  height: 84px;
-  margin: 0 auto 14px;
-  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 18px;
+  border-radius: 28px;
   background: #ffffff;
-  padding: 4px;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
+  padding: 6px;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.26);
   overflow: hidden;
   animation: mascotFloat 3.6s ease-in-out infinite;
 }
@@ -570,7 +574,7 @@ button, input, select, textarea {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 22px;
 }
 
 .wa-trigger-row {
@@ -582,14 +586,14 @@ button, input, select, textarea {
 .wa-mascot-pill {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   background: #ffffff;
   color: var(--text-dark);
-  padding: 6px 14px 6px 6px;
+  padding: 6px 18px 6px 6px;
   border-radius: var(--radius-full);
   box-shadow: var(--shadow-lg);
   border: 2px solid var(--primary-soft);
-  font-size: 0.84rem;
+  font-size: 0.92rem;
   font-weight: 700;
   cursor: pointer;
   transition: var(--transition);
@@ -602,11 +606,11 @@ button, input, select, textarea {
 }
 
 .wa-mascot-pill-img {
-  width: 40px;
-  height: 40px;
+  width: 62px;
+  height: 62px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid var(--primary);
+  border: 2.5px solid var(--primary);
 }
 
 .hero-img-wrapper:hover {
