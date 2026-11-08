@@ -512,6 +512,7 @@ function setupFAQ() {
 // ==========================================================================
 function setupWhatsAppWidget() {
   const triggerBtn = document.getElementById("waTriggerBtn");
+  const mascotPill = document.getElementById("waMascotPill");
   const chatPopup = document.getElementById("waChatPopup");
   const closeBtn = document.getElementById("waCloseBtn");
   const inputEl = document.getElementById("waChatInput");
@@ -528,6 +529,7 @@ function setupWhatsAppWidget() {
   }
 
   triggerBtn.addEventListener("click", togglePopup);
+  if (mascotPill) mascotPill.addEventListener("click", togglePopup);
   if (closeBtn) closeBtn.addEventListener("click", () => chatPopup.classList.remove("open"));
 
   // Enviar mensaje personalizado al presionar enter o botón
