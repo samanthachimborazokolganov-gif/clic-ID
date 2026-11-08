@@ -509,15 +509,55 @@ button, input, select, textarea {
   animation: mascotFloat 4s ease-in-out infinite;
 }
 
+.hero-mascot-corner {
+  position: absolute;
+  top: -22px;
+  right: -18px;
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  background: #ffffff;
+  padding: 4px;
+  box-shadow: var(--shadow-xl);
+  border: 3px solid var(--primary);
+  z-index: 3;
+  animation: mascotFloat 3.5s ease-in-out infinite;
+}
+
+.hero-mascot-corner img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.mini-mascot-avatar {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--primary);
+  background: #ffffff;
+  box-shadow: var(--shadow-sm);
+}
+
+.calc-mascot-tip {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
 @keyframes mascotFloat {
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-10px); }
 }
 
 .cta-mascot-badge {
-  width: 108px;
-  height: 108px;
-  margin: 0 auto 18px;
+  width: 84px;
+  height: 84px;
+  margin: 0 auto 14px;
   border-radius: 50%;
   background: #ffffff;
   padding: 4px;
