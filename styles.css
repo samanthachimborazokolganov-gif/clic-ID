@@ -2256,3 +2256,29 @@ button, input, select, textarea {
     right: -6px;
   }
 }
+
+/* ==========================================================================
+   AJUSTE RESPONSIVE DEL ENCABEZADO  (Clic ID · mantenimiento)
+   Motivo: en pantallas <=768px el CTA del navbar y la insignia del logo no
+   cabían y provocaban desborde horizontal (el menú hamburguesa quedaba fuera
+   del viewport). NO altera el diseño en escritorio ni tablet grande.
+   ========================================================================== */
+@media (max-width: 768px) {
+  .nav-cta-wrapper {
+    display: none;
+  }
+
+  .navbar {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .logo-distributor-badge {
+    display: none;
+  }
+
+  .brand-logo-img {
+    height: 42px;
+  }
+}

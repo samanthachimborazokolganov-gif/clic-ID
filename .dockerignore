@@ -1,0 +1,32 @@
+# --- Version control / repo metadata (never in the image) --------------------
+.git
+.gitignore
+.gitattributes
+.github
+
+# --- Docs and repo files that must not be served -----------------------------
+docs
+*.md
+CNAME
+LICENSE
+
+# --- Container/repo files, not site content ----------------------------------
+# NOTE: nginx.conf must stay in the build context (the Dockerfile COPYs it to
+# /etc/nginx/nginx.conf).
+Dockerfile
+.dockerignore
+docker-compose*.yml
+.docker/
+
+# --- Local preview junk / scratch files --------------------------------------
+*.log
+serve.log
+serve.err.log
+_extract.txt
+
+# --- Dependencies / caches ----------------------------------------------------
+node_modules
+.npm
+.DS_Store
+.netlify/
+.vercel/
