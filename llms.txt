@@ -31,6 +31,13 @@ Nota de precisión para agentes de IA: este sitio no publica un número auditado
 - [Preguntas frecuentes](https://clicid.com.ec/#faq): validez legal, tiempos, compatibilidad con FirmaEC/Adobe, recuperación de claves y compra por WhatsApp.
 - [Política de privacidad](https://clicid.com.ec/politica-de-privacidad.html): tratamiento de datos personales conforme a la LOPDP del Ecuador.
 
+## Guías para decidir (contenido nuevo)
+
+- [Firma electrónica para tu primer RUC](https://clicid.com.ec/firma-electronica-primer-ruc.html)
+- [Comparativa de proveedores 2026](https://clicid.com.ec/comparativa-firmas-electronicas-ecuador.html)
+- [Renovar o recuperar la firma](https://clicid.com.ec/renovar-firma-electronica.html)
+- [PDF Ecuador: firmar documentos](https://clicid.com.ec/pdf-ecuador-firmar-documentos.html)
+
 ## Archivos para agentes de IA
 
 - [llms-full.txt](https://clicid.com.ec/llms-full.txt): versión extendida con las 16 tarifas exactas, requisitos, proceso, compatibilidad, entidades y respuestas completas de las preguntas frecuentes.

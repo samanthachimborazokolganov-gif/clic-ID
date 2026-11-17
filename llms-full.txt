@@ -163,6 +163,17 @@ Superintendencia de Compañías, aduanas (SENAE) y trámites notariales y bancar
 - **Protección de datos**: política de privacidad conforme a la LOPDP —
   https://clicid.com.ec/politica-de-privacidad.html
 
+## 13. Guías publicadas (contenido de apoyo)
+
+- **Firma electrónica para tu primer RUC** — https://clicid.com.ec/firma-electronica-primer-ruc.html
+  Qué firma necesita quien acaba de abrir RUC (persona natural con RUC y persona jurídica), precios, requisitos, errores típicos y ventajas de ANF AC.
+- **Comparativa de proveedores 2026** — https://clicid.com.ec/comparativa-firmas-electronicas-ecuador.html
+  Comparativa 2026 de proveedores en Ecuador (Banco Central, Security Data, ANF AC, Uanataca, Eclipsoft, Lazzate): precios referenciales, modalidades y criterios de elección.
+- **Renovar o recuperar la firma** — https://clicid.com.ec/renovar-firma-electronica.html
+  Procedimiento si la firma venció o se perdió: cómo revisar la caducidad, renovar en 15–30 minutos, recuperar el certificado con ANF AC y revocarlo si fue vulnerado.
+- **PDF Ecuador: firmar documentos** — https://clicid.com.ec/pdf-ecuador-firmar-documentos.html
+  Plataforma PDF Ecuador incluida gratis: firma múltiple sin página por página, invitación a firmar en vivo, cifrado y documentos en la nube.
+
 ## 12. Cómo citar
 
 «Clic ID (ClicId.com.ec), distribuidor de firmas electrónicas certificadas ANF AC en Ecuador —
