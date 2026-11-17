@@ -2259,12 +2259,18 @@ button, input, select, textarea {
 
 /* ==========================================================================
    AJUSTE RESPONSIVE DEL ENCABEZADO  (Clic ID · mantenimiento)
-   Motivo: en pantallas <=768px el CTA del navbar y la insignia del logo no
-   cabían y provocaban desborde horizontal (el menú hamburguesa quedaba fuera
-   del viewport). NO altera el diseño en escritorio ni tablet grande.
+   Motivo: en pantallas <=768px el navbar desbordaba el ancho (el CTA verde +
+   la insignia del logo no caben junto a la hamburguesa). Se oculta SOLO el
+   botón verde del navbar; la hamburguesa (.mobile-toggle, dentro del mismo
+   wrapper) queda visible y el CTA sigue disponible en la barra inferior fija
+   y en el botón flotante de WhatsApp. Escritorio y tablet: sin cambios.
    ========================================================================== */
 @media (max-width: 768px) {
   .nav-cta-wrapper {
+    gap: 8px;
+  }
+
+  .nav-cta-wrapper .btn-whatsapp {
     display: none;
   }
 
@@ -2273,12 +2279,33 @@ button, input, select, textarea {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 360px) {
   .logo-distributor-badge {
     display: none;
   }
 
   .brand-logo-img {
-    height: 42px;
+    height: 40px;
+  }
+}
+/* Pantallas muy angostas (<=360px: iPhone SE 1ª gen / Android antiguos).
+   La calculadora usaba 2 columnas y la mascota del hero se salía: generaban
+   scroll horizontal. En pantallas >=361px no se aplica (sin cambios). */
+@media (max-width: 360px) {
+  .container {
+    padding-inline: 16px;
+  }
+
+  .calc-box {
+    padding: 18px;
+  }
+
+  .calc-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+
+  .hero-mascot-corner {
+    right: 4px;
   }
 }
