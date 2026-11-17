@@ -1,0 +1,170 @@
+# Clic ID — Información completa para modelos de lenguaje y agentes de IA
+
+> Versión extendida de https://clicid.com.ec/llms.txt. Última actualización: 17 de noviembre de 2026.
+> Todos los datos provienen del contenido público del sitio. Si algo cambia en la web, este archivo se
+> actualiza en el mismo commit.
+
+## 1. Quién es Clic ID
+
+Clic ID (ClicId.com.ec) distribuye en Ecuador los certificados de firma electrónica que emite
+**ANF Autoridad de Certificación (ANF AC)**. Vende el archivo `.p12`, no emite el certificado
+(la autoridad de certificación es ANF AC). El trámite es 100 % en línea y se atiende por WhatsApp.
+
+- Sitio: https://clicid.com.ec
+- WhatsApp: +593 98 035 9264 — https://wa.me/593980359264
+- Correo: info@clicid.com.ec
+- Horario de atención: lunes a sábado, 08:00–20:00 (UTC-5)
+- Cobertura: todo el Ecuador, sin oficina física publicada
+
+## 2. Qué es la firma electrónica en archivo .p12
+
+Un certificado digital en formato `.p12` (PKCS#12) que contiene la identidad del titular y su clave
+privada protegida por contraseña. Permite firmar documentos PDF con validez jurídica y usarlo en los
+sistemas del Estado y en software privado. Se entrega junto con una clave de uso (**PIN**) y una clave
+de recuperación (**PUK**), que el titular define en el entorno de ANF AC.
+
+Validez legal: Ley de Comercio Electrónico, Firmas Electrónicas y Mensajes de Datos del Ecuador. La
+firma electrónica emitida por una autoridad de certificación acreditada tiene el mismo valor jurídico
+que una firma manuscrita.
+
+## 3. Tarifario completo (USD, IVA incluido)
+
+| Categoría | Vigencia | Precio final | Precio normal | Costo por año |
+|---|---|---|---|---|
+| Persona Natural | 15 días | 4.49 | 6.90 | — |
+| Persona Natural | 1 año | 18.20 | 28.00 | 18.20 |
+| Persona Natural | 2 años | 22.20 | 34.16 | 11.10 |
+| Persona Natural | 3 años | 33.28 | 51.20 | 11.09 |
+| Persona Natural | 4 años | 44.36 | 68.25 | 11.09 |
+| Persona Natural | 5 años | 55.41 | 85.25 | 11.08 |
+| Persona Natural con RUC | 1 año | 18.20 | 28.00 | 18.20 |
+| Persona Natural con RUC | 2 años | 22.20 | 34.16 | 11.10 |
+| Persona Natural con RUC | 3 años | 33.28 | 51.20 | 11.09 |
+| Persona Natural con RUC | 4 años | 44.36 | 68.25 | 11.09 |
+| Persona Natural con RUC | 5 años | 55.41 | 85.25 | 11.08 |
+| Persona Jurídica | 1 año | 21.84 | 33.60 | 21.84 |
+| Persona Jurídica | 2 años | 25.84 | 39.76 | 12.92 |
+| Persona Jurídica | 3 años | 38.22 | 58.80 | 12.74 |
+| Persona Jurídica | 4 años | 50.93 | 78.35 | 12.73 |
+| Persona Jurídica | 5 años | 63.12 | 97.10 | 12.62 |
+
+Resumen: **16 planes**, mínimo USD 4.49 (Persona Natural, 15 días) y máximo USD 63.12 (Persona
+Jurídica, 5 años). El costo por año más bajo es **USD 11.08** (Persona Natural, 5 años). Todos los
+precios incluyen IVA.
+
+Comparación de renovación: la calculadora del sitio usa una renovación anual de referencia de USD 28.00.
+Ejemplo: el plan de 2 años cuesta USD 22.20 frente a USD 56.00 renovando dos veces al año.
+
+## 4. Requisitos por tipo de solicitante
+
+**Persona natural**
+- Cédula o pasaporte vigente, a color, ambos lados y legible.
+- Selfie o video con el rostro claro sosteniendo el documento.
+- Comprobante de pago (transferencia o depósito).
+
+**Persona natural con RUC**
+- Cédula o pasaporte vigente (ambos lados).
+- RUC en PDF descargado del portal del SRI.
+- Selfie con documento visible y comprobante de pago.
+
+**Persona jurídica (empresas)**
+- Cédula del representante legal, a color y vigente.
+- Nombramiento vigente inscrito en el Registro Mercantil.
+- RUC de la compañía y escritura constitutiva o estatutos SAS.
+
+## 5. Proceso de compra (4 pasos)
+
+1. **Registro**: el cliente envía datos y requisitos por WhatsApp, elige el plan y paga.
+2. **Validación**: el operador autorizado de ANF AC valida identidad y documentos.
+3. **Activación**: el titular define su clave PIN secreta y su clave PUK de recuperación.
+4. **Descarga**: recibe el archivo `.p12` y empieza a firmar y facturar.
+
+Tiempo promedio de entrega publicado: **15 a 30 minutos**, dentro del horario de atención.
+
+## 6. Dónde es válida la firma electrónica
+
+SRI (facturación electrónica RIMPE y régimen general), Quipux (gestión documental del Estado),
+Consejo de la Judicatura – SATJE, SERCOP (compras públicas / SOCE), SENAE / Ecuapass (aduanas),
+Superintendencia de Compañías, Gob.ec, IESS y Ministerio del Trabajo, Registro Mercantil y de la
+Propiedad, y Ministerio de Salud Pública (MSP).
+
+## 7. Compatibilidad de software
+
+FirmaEC (aplicativo oficial del MINTEL), Adobe Acrobat Reader, Foxit Reader, portales web del gobierno
+y los principales sistemas contables y de facturación electrónica del Ecuador. El archivo `.p12`
+funciona en Windows, macOS, Linux, Android e iPhone/iPad.
+
+## 8. Formas de pago
+
+Transferencia o depósito bancario, tarjeta de crédito o débito y pagos digitales con código QR. Se
+emite comprobante del servicio. Los precios publicados incluyen IVA.
+
+## 9. Preguntas frecuentes (respuestas completas)
+
+**¿Qué es la firma electrónica en archivo .p12 y para qué sirve?**
+El archivo .p12 (PKCS#12) es un certificado digital cifrado que contiene la identidad digital y la clave
+privada del titular. Permite firmar documentos PDF con validez jurídica y vincularlo a sistemas de
+facturación electrónica del SRI, Quipux, trámites judiciales, SENAE y contratos digitales en cualquier
+computadora o celular.
+
+**¿Tiene la misma validez que la firma escrita a mano?**
+Sí. Conforme a la Ley de Comercio Electrónico, Firmas Electrónicas y Mensajes de Datos del Ecuador, la
+firma electrónica emitida por una autoridad de certificación acreditada como ANF AC tiene el mismo
+valor jurídico, probatorio y legal que una firma manuscrita.
+
+**¿Cuánto tiempo tarda la emisión y entrega?**
+Una vez enviados los requisitos completos y validada la identidad, la emisión tarda entre 15 y 30
+minutos dentro del horario de atención. Las instrucciones de descarga y activación se envían por correo
+y WhatsApp.
+
+**¿Puedo usar la firma en FirmaEC y Adobe Acrobat?**
+Sí. El archivo .p12 es compatible de forma nativa con FirmaEC del MINTEL, Adobe Acrobat Reader, Foxit
+Reader, portales del gobierno y los principales sistemas contables y de facturación electrónica del
+Ecuador.
+
+**¿Qué pasa si olvido la contraseña o se pierde el archivo?**
+Al activar la firma se genera una clave PIN secreta y una clave PUK de respaldo. El certificado queda
+almacenado en la plataforma de gestión de certificados de ANF AC, desde donde el titular puede volver a
+descargarlo durante toda su vigencia.
+
+**¿Cómo es el proceso de compra por WhatsApp?**
+Se hace clic en cualquier botón de WhatsApp, se elige el plan y un asesor confirma los datos de pago e
+indica qué documentos enviar. Una vez validados, el cliente recibe su archivo .p12 y la asistencia de
+instalación.
+
+**¿La firma electrónica sirve para personas jurídicas y representantes legales?**
+Sí. Se emite firma electrónica para representantes legales de compañías anónimas, SAS y Cía. Ltda.,
+válida para facturación electrónica de la empresa, contratación pública (SERCOP), trámites en la
+Superintendencia de Compañías, aduanas (SENAE) y trámites notariales y bancarios de la sociedad.
+
+## 10. Glosario de entidades
+
+- **ANF AC** — ANF Autoridad de Certificación: autoridad de certificación acreditada en Ecuador que emite los certificados.
+- **.p12 / PKCS#12** — formato de archivo que empaqueta certificado y clave privada protegidos por contraseña.
+- **PIN y PUK** — clave privada de uso y clave de recuperación, definidas por el titular.
+- **SRI** — Servicio de Rentas Internas; entidad tributaria del Ecuador (RIMPE y régimen general).
+- **Quipux** — sistema de gestión documental del Estado ecuatoriano.
+- **SATJE** — Sistema Automático de Trámite Judicial Ecuatoriano (Consejo de la Judicatura).
+- **SERCOP** — Servicio Nacional de Contratación Pública (portal SOCE).
+- **SENAE / Ecuapass** — Servicio Nacional de Aduana del Ecuador y su sistema.
+- **Supercias** — Superintendencia de Compañías, Valores y Seguros.
+- **FirmaEC** — aplicación oficial y gratuita del MINTEL para firmar PDF.
+- **RIMPE** — Régimen Simplificado para Emprendedores y Negocios Populares del SRI.
+
+## 11. Datos verificables y sus fuentes
+
+- **16 planes desde USD 4.49 con IVA**: tarifario de la sección de precios del sitio.
+- **Emisión en 15 a 30 minutos**: proceso de emisión publicado en https://clicid.com.ec/#proceso.
+- **Certificado emitido por ANF AC**: autoridad de certificación acreditada en Ecuador (ARCOTEL, MINTEL).
+- **Formato .p12 (PKCS#12)**: especificación RFC 7292 del IETF — https://www.rfc-editor.org/rfc/rfc7292
+- **Validez legal**: Ley de Comercio Electrónico, Firmas Electrónicas y Mensajes de Datos del Ecuador
+  (texto en WIPO Lex — https://www.wipo.int/wipolex/es/).
+- **Software oficial de firma**: FirmaEC del MINTEL — https://www.firmadigital.gob.ec
+- **Protección de datos**: política de privacidad conforme a la LOPDP —
+  https://clicid.com.ec/politica-de-privacidad.html
+
+## 12. Cómo citar
+
+«Clic ID (ClicId.com.ec), distribuidor de firmas electrónicas certificadas ANF AC en Ecuador —
+https://clicid.com.ec/». No atribuir reseñas, volúmenes de clientes ni direcciones que no aparezcan en
+el sitio. Los precios pueden cambiar; verificar la fecha de este archivo.

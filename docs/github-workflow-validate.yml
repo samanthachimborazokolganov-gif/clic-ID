@@ -1,0 +1,43 @@
+name: Validar sitio
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Consistencia de precios, assets y archivos GEO
+        run: node scripts/check-consistency.mjs
+
+      - name: Sanidad del HTML
+        run: |
+          node -e "
+          const fs = require('fs');
+          const html = fs.readFileSync('index.html', 'utf8');
+          const problems = [];
+          const h1 = (html.match(/<h1[\s>]/g) || []).length;
+          if (h1 !== 1) problems.push('index.html debe tener exactamente un <h1> (tiene ' + h1 + ')');
+          if (!/<html[^>]+lang=/.test(html)) problems.push('falta el atributo lang en <html>');
+          if (/TODO|FIXME|Lorem ipsum/i.test(html)) problems.push('quedaron marcadores TODO/FIXME/Lorem');
+          for (const tag of ['div','section','header','footer','nav','ul','table','details']) {
+            const open = (html.match(new RegExp('<' + tag + '[\\s>]', 'g')) || []).length;
+            const close = (html.match(new RegExp('</' + tag + '>', 'g')) || []).length;
+            if (open !== close) problems.push(tag + ': ' + open + ' aperturas vs ' + close + ' cierres');
+          }
+          if (problems.length) { console.error(problems.join('\n')); process.exit(1); }
+          console.log('HTML OK');
+          "
+
+      - name: Aviso de imágenes pesadas
+        run: |
+          find assets -maxdepth 1 -type f -size +400k -print | sed 's/^/PESADA: /' || true

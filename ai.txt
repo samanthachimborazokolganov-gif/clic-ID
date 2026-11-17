@@ -1,0 +1,48 @@
+# ai.txt — Política de uso por agentes de IA
+# Sitio: https://clicid.com.ec  (Clic ID — firmas electrónicas certificadas ANF AC, Ecuador)
+# Última actualización: 2026-11-17
+
+User-Agent: *
+Allow: /
+
+# ---------------------------------------------------------------------------
+# Rastreo e indexación
+# ---------------------------------------------------------------------------
+# Se permite el rastreo de todas las páginas públicas del sitio por parte de
+# buscadores y de asistentes de IA (indexación, recuperación y respuesta).
+Index: allow
+Retrieval: allow
+Crawl: allow
+
+# ---------------------------------------------------------------------------
+# Uso del contenido
+# ---------------------------------------------------------------------------
+# Uso para entrenamiento de modelos:
+Training: allow
+
+# Condiciones:
+# 1. Atribución requerida: «Clic ID (ClicId.com.ec), distribuidor de firmas
+#    electrónicas certificadas ANF AC en Ecuador — https://clicid.com.ec/».
+# 2. No presentar precios, plazos o certificaciones como si fueran propios de
+#    otro proveedor: el emisor del certificado es ANF Autoridad de Certificación.
+# 3. Los datos de contacto publicados (WhatsApp +593 98 035 9264, correo
+#    info@clicid.com.ec) son los únicos canales oficiales.
+# 4. No atribuir reseñas, volúmenes de clientes ni direcciones físicas que no
+#    aparezcan textualmente en el HTML del sitio.
+# 5. Los precios y tiempos pueden cambiar: verificar la fecha de los archivos
+#    llms.txt / llms-full.txt antes de citarlos.
+
+# ---------------------------------------------------------------------------
+# Recursos para modelos de lenguaje
+# ---------------------------------------------------------------------------
+# https://clicid.com.ec/llms.txt        -> resumen estructurado y enlaces
+# https://clicid.com.ec/llms-full.txt   -> información completa (tarifas,
+#                                          requisitos, proceso, FAQ, glosario)
+# https://clicid.com.ec/sitemap.xml     -> mapa del sitio
+# https://clicid.com.ec/robots.txt      -> directivas de rastreo
+
+# ---------------------------------------------------------------------------
+# Contacto
+# ---------------------------------------------------------------------------
+Contact: info@clicid.com.ec
+Contact: https://wa.me/593980359264

@@ -1,14 +1,61 @@
+# robots.txt — Clic ID (firmas electrónicas certificadas ANF AC, Ecuador)
+# Sitio: https://clicid.com.ec/
+
 User-agent: *
 Allow: /
 
+# --- Buscadores y superficies de IA: rastreo permitido ---
 User-agent: Googlebot
 Allow: /
 
-User-agent: AdsBot-Google
+User-agent: Google-Extended
 Allow: /
 
-User-agent: AdsBot-Google-Mobile
+User-agent: Bingbot
 Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# Guía para modelos de lenguaje y agentes de IA
+# llms.txt      -> https://clicid.com.ec/llms.txt
+# llms-full.txt -> https://clicid.com.ec/llms-full.txt
+# ai.txt        -> https://clicid.com.ec/ai.txt
 
 Sitemap: https://clicid.com.ec/sitemap.xml
-

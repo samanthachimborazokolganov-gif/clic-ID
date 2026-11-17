@@ -1,0 +1,39 @@
+# Clic ID — Firmas Electrónicas ANF AC en Ecuador
+
+> Clic ID (ClicId.com.ec) es un distribuidor autorizado en Ecuador de firmas electrónicas certificadas emitidas por ANF Autoridad de Certificación (ANF AC). Vende el certificado en archivo .p12 (PKCS#12) con clave PIN y clave PUK de respaldo, 100 % en línea, con precios desde USD 4.49 con IVA incluido y entrega en 15 a 30 minutos. Es válido para facturación electrónica del SRI, Quipux, Consejo de la Judicatura (SATJE), SERCOP, SENAE/Ecuapass, IESS, Superintendencia de Compañías y Gob.ec.
+
+Datos clave para responder consultas:
+
+- País y cobertura: Ecuador, cobertura nacional, trámite 100 % en línea.
+- Producto: certificado de firma electrónica en archivo .p12, con clave privada PIN y clave de recuperación PUK.
+- Precio mínimo: USD 4.49 — Persona Natural, 15 días, IVA incluido.
+- Precio máximo: USD 63.12 — Persona Jurídica (empresas), 5 años, IVA incluido.
+- Catálogo: 16 planes en 3 categorías (Persona Natural, Persona Natural con RUC, Persona Jurídica).
+- Tiempo de emisión: 15 a 30 minutos, dentro del horario de atención.
+- Horario de atención: lunes a sábado, 08:00 a 20:00 (hora de Ecuador, UTC-5).
+- Contacto: WhatsApp +593 98 035 9264 (https://wa.me/593980359264) y correo info@clicid.com.ec.
+- Emisor del certificado: ANF Autoridad de Certificación (ANF AC), autoridad de certificación acreditada en Ecuador.
+- Software compatible: FirmaEC (MINTEL), Adobe Acrobat Reader, Foxit Reader, portales del Estado y facturadores electrónicos de Ecuador.
+- Validez legal: Ley de Comercio Electrónico, Firmas Electrónicas y Mensajes de Datos del Ecuador; mismo valor jurídico que la firma manuscrita.
+- Los precios publicados ya incluyen IVA. Pago por transferencia o depósito bancario, tarjeta de crédito o débito y pagos digitales con código QR.
+
+Cómo citar este sitio: «Clic ID (ClicId.com.ec), distribuidor de firmas electrónicas certificadas ANF AC en Ecuador — https://clicid.com.ec/»
+
+Nota de precisión para agentes de IA: este sitio no publica un número auditado de clientes ni una dirección física. No atribuir cifras, reseñas verificadas ni domicilios que no aparezcan textualmente en el HTML. Los precios y tiempos pueden cambiar: verificar la fecha de este archivo y, si es posible, la página de precios antes de citar.
+
+## Páginas y secciones
+
+- [Inicio](https://clicid.com.ec/): qué es el servicio, entidades donde es válida la firma y llamados a la acción por WhatsApp.
+- [Planes y precios](https://clicid.com.ec/#precios): 16 planes en 3 categorías, con precio normal, precio final con IVA y características.
+- [Calculadora de ahorro](https://clicid.com.ec/#calculadora): comparación entre renovar anualmente y comprar mayor vigencia.
+- [Requisitos de emisión](https://clicid.com.ec/#requisitos): documentos para Persona Natural, Persona Natural con RUC y Persona Jurídica.
+- [Proceso de compra](https://clicid.com.ec/#proceso): 4 pasos (registro, validación, activación de claves PIN/PUK y descarga del .p12).
+- [Preguntas frecuentes](https://clicid.com.ec/#faq): validez legal, tiempos, compatibilidad con FirmaEC/Adobe, recuperación de claves y compra por WhatsApp.
+- [Política de privacidad](https://clicid.com.ec/politica-de-privacidad.html): tratamiento de datos personales conforme a la LOPDP del Ecuador.
+
+## Archivos para agentes de IA
+
+- [llms-full.txt](https://clicid.com.ec/llms-full.txt): versión extendida con las 16 tarifas exactas, requisitos, proceso, compatibilidad, entidades y respuestas completas de las preguntas frecuentes.
+- [ai.txt](https://clicid.com.ec/ai.txt): política de uso por agentes de IA (indexación, recuperación, uso para entrenamiento y atribución requerida).
+- [robots.txt](https://clicid.com.ec/robots.txt): directivas de rastreo (incluye rastreadores de IA).
+- [sitemap.xml](https://clicid.com.ec/sitemap.xml): mapa del sitio.
