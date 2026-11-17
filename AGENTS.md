@@ -123,9 +123,7 @@ editar → probar en local → commit en main → push → (webhook) → Dokploy
 
 - Rama de producción: **`main`**. No hay ramas de staging.
 - Si prefieres revisión previa: crea rama `mejora/lo-que-sea`, abre Pull Request y pide revisión.
-- **Estado del despliegue automático:** el webhook de GitHub → Dokploy **aún no está configurado**.
-  Mientras no se configure, después de cada push hay que abrir Dokploy → app *Clic ID — Sitio web* →
-  **Deploy** (o pedírselo al responsable de infra). Ver §8.
+- **Despliegue automático: ACTIVO.** Cada push a `main` dispara el webhook de GitHub hacia Dokploy y la app se reconstruye y publica sola (tarda ~1–2 minutos). Si el deploy falla, se ve en Dokploy → *Deployments*.
 - **Rollback:** en Dokploy → pestaña *Deployments* → elige el deploy anterior → **Rollback**.
   También funciona `git revert <sha>` + push.
 
@@ -138,7 +136,7 @@ Dockerfile (copia por extensión).
 
 ## 8. Pendientes conocidos (actualizado: noviembre 2026)
 
-1. **Webhook de despliegue** (requiere permiso admin del repo): GitHub → *Settings → Webhooks →
+1. ~~Webhook de despliegue~~ — **configurado y funcionando** (probado con un push real).
    Add webhook* → Payload URL `https://dokploy.nexuss.top/api/deploy/<TOKEN>` (el responsable de
    infra lo pasa), Content type `application/json`, evento *Just the push event*.
 2. **CI en GitHub Actions**: la plantilla está en `docs/github-workflow-validate.yml`. Copiarla a `.github/workflows/validate.yml` requiere un token con scope `workflow` (o hacerlo desde la web de GitHub). Mientras tanto, ejecutar `node scripts/check-consistency.mjs` antes de cada push.

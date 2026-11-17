@@ -45,7 +45,7 @@ Resultado de esta tanda (antes → después):
 - [x] CI de validación (`.github/workflows/validate.yml`): precios consistentes, JSON-LD válido,
       assets existentes, archivos GEO presentes, sanidad del HTML.
 - [x] Script `scripts/check-consistency.mjs` (precios app.js ↔ JSON-LD ↔ llms-full).
-- [ ] **Webhook de despliegue automático** → requiere permiso admin del repo (ver §5).
+- [x] **Webhook de despliegue automático** configurado por la dueña del repo (probado: cada push a `main` despliega solo).
 - [ ] Fuentes: recortar pesos no usados de Outfit/Inter (requiere revisar qué pesos usa el CSS).
 - [ ] Medición formal con PageSpeed Insights / CrUX antes/después (registrar capturas).
 
@@ -100,7 +100,7 @@ JSON-LD (`Service` + `FAQPage` + `BreadcrumbList`), enlace interno a la home y d
 
 | # | Pendiente | Quién | Detalle |
 |---|---|---|---|
-| 1 | Webhook GitHub → Dokploy | admin del repo | Settings → Webhooks → `https://dokploy.nexuss.top/api/deploy/<TOKEN>` · `application/json` · push |
+| 1 | ~~Webhook GitHub → Dokploy~~ ✅ hecho | admin del repo | Settings → Webhooks → `https://dokploy.nexuss.top/api/deploy/<TOKEN>` · `application/json` · push |
 | 2 | Google Search Console | negocio | verificar dominio + enviar `sitemap.xml` |
 | 3 | Bing Webmaster Tools | negocio | verificar dominio (o importar de GSC) |
 | 4 | Perfiles sociales (`sameAs`) | negocio | URLs reales de Instagram/Facebook/Google Business |
