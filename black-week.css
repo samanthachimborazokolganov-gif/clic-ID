@@ -1,0 +1,626 @@
+/* ==========================================================================
+   ClicId.com.ec - BLACK WEEK EDITION (50% OFF EN TODOS LOS PLANES)
+   Paleta: Obsidian Black + Neon Gold + Electric Purple + Crimson 50% OFF
+   ========================================================================== */
+
+:root {
+  --bw-bg-deep: #06060b;
+  --bw-bg-surface: #0d0d17;
+  --bw-bg-card: #131322;
+  --bw-bg-card-hover: #19192e;
+  --bw-border: rgba(255, 255, 255, 0.1);
+  --bw-border-gold: rgba(251, 191, 36, 0.45);
+  --bw-gold: #fbbf24;
+  --bw-gold-bright: #fde047;
+  --bw-gold-dark: #d97706;
+  --bw-red: #ef4444;
+  --bw-purple: #9333ea;
+  --bw-purple-neon: #a855f7;
+  --bw-text-white: #f8fafc;
+  --bw-text-gray: #cbd5e1;
+  --bw-text-muted: #94a3b8;
+}
+
+body.black-week-theme {
+  background-color: var(--bw-bg-deep);
+  color: var(--bw-text-gray);
+}
+
+/* ==========================================================================
+   Top Black Week Urgency Bar
+   ========================================================================== */
+.bw-top-bar {
+  background: linear-gradient(90deg, #000000 0%, #1e1b4b 35%, #4c1d95 70%, #000000 100%);
+  border-bottom: 1px solid var(--bw-border-gold);
+  color: #ffffff;
+  padding: 10px 16px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: center;
+  position: relative;
+  z-index: 101;
+  box-shadow: 0 4px 20px rgba(251, 191, 36, 0.15);
+}
+
+.bw-top-bar .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.bw-pill-50 {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  color: #000000;
+  font-weight: 900;
+  font-size: 0.78rem;
+  padding: 3px 12px;
+  border-radius: 9999px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  box-shadow: 0 0 14px rgba(251, 191, 36, 0.55);
+  animation: pulse-badge 1.6s infinite;
+}
+
+.bw-countdown-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(0, 0, 0, 0.65);
+  border: 1px solid var(--bw-gold);
+  color: var(--bw-gold-bright);
+  padding: 3px 12px;
+  border-radius: 8px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ==========================================================================
+   Header / Navbar Oscuro
+   ========================================================================== */
+.black-week-theme .header {
+  background: rgba(9, 9, 17, 0.92);
+  border-bottom: 1px solid rgba(251, 191, 36, 0.2);
+}
+
+.black-week-theme .header.scrolled {
+  background: rgba(6, 6, 12, 0.98);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.65);
+}
+
+.black-week-theme .logo-distributor-badge {
+  background: rgba(251, 191, 36, 0.12);
+  color: var(--bw-gold);
+  border: 1px solid rgba(251, 191, 36, 0.35);
+}
+
+.black-week-theme .logo-distributor-badge strong {
+  color: #ffffff;
+}
+
+.black-week-theme .nav-links a {
+  color: var(--bw-text-gray);
+}
+
+.black-week-theme .nav-links a:hover {
+  color: var(--bw-gold);
+}
+
+.black-week-theme .nav-links a::after {
+  background: var(--bw-gold);
+}
+
+.black-week-theme .mobile-toggle {
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   Hero Section Black Week
+   ========================================================================== */
+.black-week-theme .hero {
+  background:
+    radial-gradient(circle at 15% 20%, rgba(147, 51, 234, 0.24) 0%, transparent 45%),
+    radial-gradient(circle at 85% 30%, rgba(251, 191, 36, 0.16) 0%, transparent 50%),
+    linear-gradient(180deg, #06060b 0%, #0d0d18 100%);
+  border-bottom: 1px solid rgba(251, 191, 36, 0.18);
+}
+
+.black-week-theme .hero::before {
+  background: radial-gradient(circle, rgba(251, 191, 36, 0.15) 0%, transparent 70%);
+}
+
+.bw-hero-ribbon {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(90deg, rgba(251, 191, 36, 0.16) 0%, rgba(147, 51, 234, 0.2) 100%);
+  border: 1.5px solid var(--bw-gold);
+  color: var(--bw-gold-bright);
+  padding: 7px 16px;
+  border-radius: 9999px;
+  font-size: 0.86rem;
+  font-weight: 800;
+  width: fit-content;
+  box-shadow: 0 0 22px rgba(251, 191, 36, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.bw-hero-ribbon .bw-fire {
+  background: var(--bw-red);
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.74rem;
+  font-weight: 900;
+}
+
+.black-week-theme .hero-title {
+  color: #ffffff;
+}
+
+.black-week-theme .hero-title .highlight {
+  background: linear-gradient(135deg, #fde047 0%, #fbbf24 50%, #f59e0b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.black-week-theme .hero-title .bw-50-highlight {
+  display: inline-block;
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  color: #ffffff;
+  -webkit-text-fill-color: #ffffff;
+  padding: 2px 14px;
+  border-radius: 12px;
+  font-size: 2.3rem;
+  vertical-align: middle;
+  box-shadow: 0 6px 20px rgba(239, 68, 68, 0.45);
+  border: 2px solid #fde047;
+}
+
+.black-week-theme .hero-subtitle {
+  color: var(--bw-text-gray);
+}
+
+.black-week-theme .hero-subtitle strong {
+  color: var(--bw-gold-bright);
+}
+
+.btn-bw-gold {
+  background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
+  color: #000000 !important;
+  font-weight: 900;
+  box-shadow: 0 6px 24px rgba(251, 191, 36, 0.4);
+  border: 1px solid #fde047;
+}
+
+.btn-bw-gold:hover {
+  background: linear-gradient(135deg, #fde047 0%, #f59e0b 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(251, 191, 36, 0.55);
+}
+
+.black-week-theme .hero-trust-list {
+  border-top-color: rgba(255, 255, 255, 0.14);
+}
+
+.black-week-theme .trust-item {
+  color: var(--bw-text-gray);
+}
+
+.black-week-theme .trust-item svg {
+  color: var(--bw-gold);
+}
+
+.black-week-theme .hero-img-wrapper {
+  border: 3px solid var(--bw-gold);
+  box-shadow: 0 20px 50px rgba(251, 191, 36, 0.22), 0 0 40px rgba(147, 51, 234, 0.3);
+}
+
+.black-week-theme .hero-mascot-corner {
+  border-color: var(--bw-gold);
+  box-shadow: 0 16px 36px rgba(251, 191, 36, 0.35);
+}
+
+/* Sticker Flotante -50% en Hero */
+.bw-floating-50-seal {
+  position: absolute;
+  bottom: -18px;
+  left: -20px;
+  background: linear-gradient(135deg, #ef4444 0%, #b91c1c 100%);
+  color: #ffffff;
+  border: 3px solid #fde047;
+  border-radius: 20px;
+  padding: 10px 18px;
+  z-index: 4;
+  box-shadow: 0 14px 30px rgba(239, 68, 68, 0.5);
+  text-align: center;
+  line-height: 1.1;
+  animation: float 3.2s ease-in-out infinite;
+}
+
+.bw-floating-50-seal .big {
+  font-size: 1.55rem;
+  font-weight: 900;
+  color: #fde047;
+  display: block;
+}
+
+.bw-floating-50-seal .small {
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+/* ==========================================================================
+   Entities Section Dark
+   ========================================================================== */
+.black-week-theme .entities-section {
+  background: #0a0a14;
+  border-color: var(--bw-border);
+}
+
+.black-week-theme .entities-header h2 {
+  color: #ffffff;
+}
+
+.black-week-theme .entities-header p {
+  color: var(--bw-text-muted);
+}
+
+.black-week-theme .entity-chip {
+  background: var(--bw-bg-card);
+  border-color: var(--bw-border);
+  color: var(--bw-text-white);
+}
+
+.black-week-theme .entity-chip:hover {
+  border-color: var(--bw-gold);
+  color: var(--bw-gold);
+}
+
+.black-week-theme .entity-chip .dot {
+  background: var(--bw-gold);
+}
+
+/* ==========================================================================
+   Pricing Section Black Week (50% OFF Cards)
+   ========================================================================== */
+.black-week-theme .pricing-section {
+  background: radial-gradient(circle at 50% 0%, rgba(147, 51, 234, 0.16) 0%, transparent 60%),
+              var(--bw-bg-deep);
+}
+
+.black-week-theme .section-tag {
+  background: rgba(251, 191, 36, 0.14);
+  color: var(--bw-gold);
+  border: 1px solid rgba(251, 191, 36, 0.35);
+}
+
+.black-week-theme .section-title {
+  color: #ffffff;
+}
+
+.black-week-theme .section-title span {
+  color: var(--bw-gold);
+}
+
+.black-week-theme .section-desc {
+  color: var(--bw-text-muted);
+}
+
+/* Tabs */
+.black-week-theme .pricing-tabs-nav {
+  background: var(--bw-bg-surface);
+  border-color: rgba(251, 191, 36, 0.25);
+}
+
+.black-week-theme .tab-btn {
+  color: var(--bw-text-muted);
+}
+
+.black-week-theme .tab-btn:hover {
+  color: #ffffff;
+}
+
+.black-week-theme .tab-btn.active {
+  background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
+  color: #000000;
+  font-weight: 800;
+  border-color: #fde047;
+  box-shadow: 0 4px 16px rgba(251, 191, 36, 0.35);
+}
+
+/* Pricing Cards Dark */
+.black-week-theme .pricing-card {
+  background: linear-gradient(180deg, #131322 0%, #0d0d18 100%);
+  border: 1.5px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+}
+
+.black-week-theme .pricing-card:hover {
+  border-color: var(--bw-gold);
+  box-shadow: 0 20px 45px rgba(251, 191, 36, 0.18);
+}
+
+.black-week-theme .pricing-card.featured {
+  background: linear-gradient(180deg, #1e1638 0%, #120e24 100%);
+  border: 2.5px solid var(--bw-gold);
+  box-shadow: 0 20px 50px rgba(251, 191, 36, 0.22);
+}
+
+.black-week-theme .pricing-card.bomba {
+  background: linear-gradient(180deg, #1f1710 0%, #120f1c 100%);
+  border: 2px solid var(--bw-gold);
+}
+
+.black-week-theme .card-duration {
+  color: #ffffff;
+}
+
+.black-week-theme .card-target {
+  color: var(--bw-gold);
+}
+
+.black-week-theme .card-pricing-block {
+  border-color: rgba(255, 255, 255, 0.12);
+  position: relative;
+}
+
+.bw-discount-tag {
+  display: inline-block;
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  color: #ffffff;
+  font-size: 0.74rem;
+  font-weight: 900;
+  padding: 2px 9px;
+  border-radius: 999px;
+  margin-left: auto;
+  letter-spacing: 0.4px;
+  border: 1px solid #fde047;
+}
+
+.black-week-theme .price-regular-row {
+  color: var(--bw-text-muted);
+}
+
+.black-week-theme .price-old {
+  color: #f87171;
+  font-size: 1rem;
+}
+
+.black-week-theme .price-currency {
+  color: var(--bw-gold);
+}
+
+.black-week-theme .price-amount {
+  color: #ffffff;
+}
+
+.black-week-theme .featured .price-amount,
+.black-week-theme .bomba .price-amount {
+  color: var(--bw-gold-bright);
+  text-shadow: 0 0 20px rgba(251, 191, 36, 0.35);
+}
+
+.black-week-theme .card-features li {
+  color: var(--bw-text-gray);
+}
+
+.black-week-theme .card-features li strong {
+  color: #ffffff;
+}
+
+.black-week-theme .card-features li svg {
+  color: var(--bw-gold);
+}
+
+.black-week-theme .btn-outline {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--bw-gold);
+  border-color: rgba(251, 191, 36, 0.35);
+}
+
+.black-week-theme .btn-outline:hover {
+  background: rgba(251, 191, 36, 0.15);
+  border-color: var(--bw-gold);
+  color: #ffffff;
+}
+
+.black-week-theme .pricing-footer-banner {
+  background: var(--bw-bg-card);
+  border-color: var(--bw-border-gold);
+}
+
+.black-week-theme .pricing-footer-text {
+  color: var(--bw-text-white);
+}
+
+/* ==========================================================================
+   Calculadora, Requisitos, Proceso, Beneficios, Testimonios, Pagos, FAQ
+   ========================================================================== */
+.black-week-theme .calculator-section {
+  background: linear-gradient(135deg, #0b0b15 0%, #151026 100%);
+  border-color: var(--bw-border);
+}
+
+.black-week-theme .calc-box {
+  background: var(--bw-bg-card);
+  border-color: var(--bw-border-gold);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+.black-week-theme .calc-left h3,
+.black-week-theme .slider-labels {
+  color: #ffffff;
+}
+
+.black-week-theme .calc-left p {
+  color: var(--bw-text-gray);
+}
+
+.black-week-theme .slider-labels span.val {
+  color: var(--bw-gold);
+}
+
+.black-week-theme .calc-mascot-tip {
+  background: rgba(251, 191, 36, 0.08);
+  border-color: rgba(251, 191, 36, 0.3);
+}
+
+.black-week-theme .calc-mascot-tip p {
+  color: var(--bw-text-white) !important;
+}
+
+.black-week-theme .calc-right {
+  background: linear-gradient(135deg, #1e1b4b 0%, #3b0764 100%);
+  border: 1.5px solid var(--bw-gold);
+}
+
+.black-week-theme .requirements-section,
+.black-week-theme .benefits-section,
+.black-week-theme .payments-section {
+  background: var(--bw-bg-deep);
+  border-color: var(--bw-border);
+}
+
+.black-week-theme .process-section,
+.black-week-theme .faq-section,
+.black-week-theme .testimonials-section {
+  background: var(--bw-bg-surface);
+  border-color: var(--bw-border);
+}
+
+.black-week-theme .req-card,
+.black-week-theme .step-card,
+.black-week-theme .benefit-card,
+.black-week-theme .testimonial-card,
+.black-week-theme .payment-badge,
+.black-week-theme .faq-item {
+  background: var(--bw-bg-card);
+  border-color: var(--bw-border);
+  color: var(--bw-text-gray);
+}
+
+.black-week-theme .req-card:hover,
+.black-week-theme .step-card:hover,
+.black-week-theme .benefit-card:hover,
+.black-week-theme .testimonial-card:hover {
+  background: var(--bw-bg-card-hover);
+  border-color: var(--bw-gold);
+}
+
+.black-week-theme .req-header h3,
+.black-week-theme .req-list li strong,
+.black-week-theme .step-title,
+.black-week-theme .benefit-title,
+.black-week-theme .author-info h5,
+.black-week-theme .payments-wrapper h4,
+.black-week-theme .faq-question {
+  color: #ffffff;
+}
+
+.black-week-theme .req-list li,
+.black-week-theme .step-desc,
+.black-week-theme .benefit-desc,
+.black-week-theme .testimonial-quote,
+.black-week-theme .faq-answer {
+  color: var(--bw-text-gray);
+}
+
+.black-week-theme .req-note {
+  background: rgba(251, 191, 36, 0.08);
+  border-left-color: var(--bw-gold);
+  color: var(--bw-gold-bright);
+}
+
+.black-week-theme .req-icon-box,
+.black-week-theme .benefit-icon {
+  background: rgba(251, 191, 36, 0.15);
+  color: var(--bw-gold);
+}
+
+.black-week-theme .step-number {
+  background: var(--bw-gold);
+  color: #000000;
+}
+
+.black-week-theme .time-pill {
+  background: var(--bw-bg-card);
+  color: #ffffff;
+  border-color: var(--bw-gold);
+}
+
+.black-week-theme .time-pill span.highlight {
+  color: var(--bw-gold);
+}
+
+.black-week-theme .faq-item.active {
+  border-color: var(--bw-gold);
+}
+
+.black-week-theme .faq-item.active .faq-question {
+  color: var(--bw-gold);
+}
+
+.black-week-theme .cta-banner-section {
+  background: linear-gradient(135deg, #000000 0%, #2e1065 50%, #000000 100%);
+  border-top: 2px solid var(--bw-gold);
+  border-bottom: 2px solid var(--bw-gold);
+}
+
+/* Modal Dark Adjustment */
+.black-week-theme .modal-card {
+  background: #131322;
+  border: 2px solid var(--bw-gold);
+  color: #ffffff;
+}
+
+.black-week-theme .modal-title,
+.black-week-theme .form-label {
+  color: #ffffff;
+}
+
+.black-week-theme .modal-subtitle {
+  color: var(--bw-text-gray);
+}
+
+.black-week-theme .modal-plan-summary {
+  background: rgba(251, 191, 36, 0.12);
+  border-color: var(--bw-gold);
+}
+
+.black-week-theme .modal-plan-summary .summary-title {
+  color: #ffffff;
+}
+
+.black-week-theme .modal-plan-summary .summary-price {
+  color: var(--bw-gold-bright);
+}
+
+.black-week-theme .form-input {
+  background: #0a0a14;
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.black-week-theme .mobile-sticky-bar {
+  background: rgba(10, 10, 20, 0.98);
+  border-top: 1px solid var(--bw-gold);
+}
+
+.black-week-theme .mobile-bar-price .val {
+  color: var(--bw-gold-bright);
+}
+
+@media (max-width: 768px) {
+  .black-week-theme .nav-links {
+    background: #0d0d17;
+    border-bottom-color: var(--bw-border-gold);
+  }
+  .black-week-theme .hero-title .bw-50-highlight {
+    font-size: 1.65rem;
+  }
+}
