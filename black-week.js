@@ -1,6 +1,6 @@
 /**
  * ClicId.com.ec - BLACK WEEK EDITION (50% DE DESCUENTO EN TODOS LOS PLANES)
- * Distribuidor Autorizado de Firmas Electrónicas ANF AC
+ * Mantiene el diseño luminoso oficial + Pop-ups promocionales Black Week
  */
 
 const CONFIG = {
@@ -22,7 +22,7 @@ const PRICING_DATA = {
         id: "pn-15d",
         duration: "15 Días",
         badge: "🖤 BLACK WEEK -50%",
-        badgeType: "gold",
+        badgeType: "bw-black-gold",
         isBomba: true,
         priceOld: "4.49",
         priceCurrent: "2.25",
@@ -39,7 +39,7 @@ const PRICING_DATA = {
         id: "pn-1a",
         duration: "1 Año",
         badge: "🖤 BLACK WEEK -50%",
-        badgeType: "primary",
+        badgeType: "bw-black-gold",
         priceOld: "18.20",
         priceCurrent: "9.10",
         icon: "📄",
@@ -55,7 +55,7 @@ const PRICING_DATA = {
         id: "pn-2a",
         duration: "2 Años",
         badge: "⭐ Más Vendido • -50%",
-        badgeType: "gold",
+        badgeType: "bw-black-gold",
         isFeatured: true,
         priceOld: "22.20",
         priceCurrent: "11.10",
@@ -72,7 +72,7 @@ const PRICING_DATA = {
         id: "pn-3a",
         duration: "3 Años",
         badge: "🖤 BLACK WEEK -50%",
-        badgeType: "primary",
+        badgeType: "bw-black-gold",
         priceOld: "33.28",
         priceCurrent: "16.64",
         icon: "💼",
@@ -88,7 +88,7 @@ const PRICING_DATA = {
         id: "pn-4a",
         duration: "4 Años",
         badge: "🖤 BLACK WEEK -50%",
-        badgeType: "primary",
+        badgeType: "bw-black-gold",
         priceOld: "44.36",
         priceCurrent: "22.18",
         icon: "🛡️",
@@ -126,7 +126,7 @@ const PRICING_DATA = {
         id: "pnr-1a",
         duration: "1 Año",
         badge: "🖤 BLACK WEEK -50%",
-        badgeType: "primary",
+        badgeType: "bw-black-gold",
         priceOld: "18.20",
         priceCurrent: "9.10",
         icon: "📝",
@@ -142,7 +142,7 @@ const PRICING_DATA = {
         id: "pnr-2a",
         duration: "2 Años",
         badge: "⭐ Recomendado • -50%",
-        badgeType: "gold",
+        badgeType: "bw-black-gold",
         isFeatured: true,
         priceOld: "22.20",
         priceCurrent: "11.10",
@@ -159,7 +159,7 @@ const PRICING_DATA = {
         id: "pnr-3a",
         duration: "3 Años",
         badge: "🖤 BLACK WEEK -50%",
-        badgeType: "primary",
+        badgeType: "bw-black-gold",
         priceOld: "33.28",
         priceCurrent: "16.64",
         icon: "📈",
@@ -175,7 +175,7 @@ const PRICING_DATA = {
         id: "pnr-4a",
         duration: "4 Años",
         badge: "🖤 BLACK WEEK -50%",
-        badgeType: "primary",
+        badgeType: "bw-black-gold",
         priceOld: "44.36",
         priceCurrent: "22.18",
         icon: "🏆",
@@ -213,7 +213,7 @@ const PRICING_DATA = {
         id: "pj-1a",
         duration: "1 Año",
         badge: "🖤 BLACK WEEK -50%",
-        badgeType: "primary",
+        badgeType: "bw-black-gold",
         priceOld: "21.84",
         priceCurrent: "10.92",
         icon: "🏢",
@@ -229,7 +229,7 @@ const PRICING_DATA = {
         id: "pj-2a",
         duration: "2 Años",
         badge: "⭐ Más Recomendado • -50%",
-        badgeType: "gold",
+        badgeType: "bw-black-gold",
         isFeatured: true,
         priceOld: "25.84",
         priceCurrent: "12.92",
@@ -246,7 +246,7 @@ const PRICING_DATA = {
         id: "pj-3a",
         duration: "3 Años",
         badge: "🖤 BLACK WEEK -50%",
-        badgeType: "primary",
+        badgeType: "bw-black-gold",
         priceOld: "38.22",
         priceCurrent: "19.11",
         icon: "📊",
@@ -262,7 +262,7 @@ const PRICING_DATA = {
         id: "pj-4a",
         duration: "4 Años",
         badge: "🖤 BLACK WEEK -50%",
-        badgeType: "primary",
+        badgeType: "bw-black-gold",
         priceOld: "50.93",
         priceCurrent: "25.47",
         icon: "🌐",
@@ -397,11 +397,11 @@ function setupPricingTabs() {
 }
 
 // ==========================================================================
-// Temporizador de Cuenta Regresiva Black Week
+// Temporizador de Cuenta Regresiva Black Week (Top Bar + Pop-up)
 // ==========================================================================
 function setupCountdown() {
   const timerEl = document.getElementById("bwUrgencyTimer");
-  if (!timerEl) return;
+  const popupTimerEl = document.getElementById("bwPopupTimer");
 
   let totalSeconds = 5 * 3600 + 38 * 60 + 45;
 
@@ -414,12 +414,49 @@ function setupCountdown() {
     const s = totalSeconds % 60;
 
     const pad = n => n.toString().padStart(2, "0");
-    timerEl.textContent = `${pad(h)}h : ${pad(m)}m : ${pad(s)}s`;
+    const formatted = `${pad(h)}h : ${pad(m)}m : ${pad(s)}s`;
+    if (timerEl) timerEl.textContent = formatted;
+    if (popupTimerEl) popupTimerEl.textContent = formatted;
     totalSeconds--;
   }
 
   update();
   setInterval(update, 1000);
+}
+
+// ==========================================================================
+// POP-UP PROMOCIONAL BLACK WEEK (Auto-open + Botón Flotante + Top Bar)
+// ==========================================================================
+function setupBlackWeekPopup() {
+  const popupOverlay = document.getElementById("bwPromoPopupOverlay");
+  const closeBtn = document.getElementById("bwPopupCloseBtn");
+  const seePlansBtn = document.getElementById("bwPopupSeePlansBtn");
+  const floatingLauncher = document.getElementById("bwFloatingLauncher");
+  const topBarOpenBtn = document.getElementById("topBarOpenPopupBtn");
+
+  if (!popupOverlay) return;
+
+  function openPopup() {
+    popupOverlay.classList.add("open");
+  }
+
+  function closePopup() {
+    popupOverlay.classList.remove("open");
+  }
+
+  if (closeBtn) closeBtn.addEventListener("click", closePopup);
+  if (seePlansBtn) seePlansBtn.addEventListener("click", closePopup);
+  if (floatingLauncher) floatingLauncher.addEventListener("click", openPopup);
+  if (topBarOpenBtn) topBarOpenBtn.addEventListener("click", openPopup);
+
+  popupOverlay.addEventListener("click", (e) => {
+    if (e.target === popupOverlay) closePopup();
+  });
+
+  // Mostrar el Pop-up de Black Week automáticamente 1.2 segundos después de entrar
+  setTimeout(() => {
+    openPopup();
+  }, 1200);
 }
 
 // ==========================================================================
@@ -433,7 +470,6 @@ function setupSavingsCalculator() {
 
   if (!slider || !yearsVal || !savingsNum || !detailsEl) return;
 
-  // Precio normal anual ($18.20/año) vs precios Black Week 50% OFF
   const normalPrices = {
     1: 18.20,
     2: 22.20,
@@ -469,40 +505,6 @@ function setupSavingsCalculator() {
 
   slider.addEventListener("input", recalculate);
   recalculate();
-}
-
-// ==========================================================================
-// FAQ Accordion
-// ==========================================================================
-function setupFAQ() {
-  const faqItems = document.querySelectorAll(".faq-item");
-
-  faqItems.forEach(item => {
-    const questionBtn = item.querySelector(".faq-question");
-    const answer = item.querySelector(".faq-answer");
-
-    if (!questionBtn || !answer) return;
-
-    questionBtn.addEventListener("click", () => {
-      const isOpen = item.classList.contains("active");
-
-      faqItems.forEach(other => {
-        if (other !== item) {
-          other.classList.remove("active");
-          const otherAnswer = other.querySelector(".faq-answer");
-          if (otherAnswer) otherAnswer.style.maxHeight = null;
-        }
-      });
-
-      if (isOpen) {
-        item.classList.remove("active");
-        answer.style.maxHeight = null;
-      } else {
-        item.classList.add("active");
-        answer.style.maxHeight = answer.scrollHeight + "px";
-      }
-    });
-  });
 }
 
 // ==========================================================================
@@ -552,12 +554,6 @@ function setupWhatsAppWidget() {
       chatPopup.classList.remove("open");
     });
   });
-
-  setTimeout(() => {
-    if (!chatPopup.classList.contains("open")) {
-      chatPopup.classList.add("open");
-    }
-  }, 12000);
 }
 
 // ==========================================================================
@@ -618,7 +614,7 @@ function attachModalButtons() {
         summaryEl.innerHTML = `
           <div>
             <div class="summary-title">${category} - ${duration} (BLACK WEEK -50%)</div>
-            <small style="color: #fbbf24;">Distribuidor Autorizado ANF AC</small>
+            <small style="color: #64748b;">Distribuidor Autorizado ANF AC</small>
           </div>
           <div class="summary-price">$${price}</div>
         `;
@@ -669,8 +665,8 @@ document.addEventListener("DOMContentLoaded", () => {
   renderPricingCards("persona-natural");
   setupPricingTabs();
   setupCountdown();
+  setupBlackWeekPopup();
   setupSavingsCalculator();
-  setupFAQ();
   setupWhatsAppWidget();
   setupModal();
   setupNavigation();

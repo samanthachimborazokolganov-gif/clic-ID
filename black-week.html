@@ -29,11 +29,11 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/logo-icon.png">
 
-  <!-- Estilos Base + Tema Especial Black Week -->
+  <!-- Estilos Base Claros (Lila + Blanco) + Pop-ups y Sellos Black Week -->
   <link rel="stylesheet" href="styles.css?v=3">
-  <link rel="stylesheet" href="black-week.css?v=1">
+  <link rel="stylesheet" href="black-week.css?v=2">
 </head>
-<body class="black-week-theme">
+<body>
 
   <!-- ==========================================================================
        Barra Superior de Urgencia BLACK WEEK
@@ -45,19 +45,22 @@
       <span class="bw-countdown-box">
         ⏳ Termina en: <span id="bwUrgencyTimer">05h : 38m : 45s</span>
       </span>
+      <button type="button" class="bw-open-popup-link" id="topBarOpenPopupBtn">
+        🎁 Ver Cupón 50% OFF
+      </button>
     </div>
   </div>
 
   <!-- ==========================================================================
-       Header / Navbar Principal (Modo Oscuro Black Week)
+       Header / Navbar Principal (Limpio y Luminoso)
        ========================================================================== -->
   <header class="header">
     <div class="container">
       <nav class="navbar">
-        <!-- Logo de Marca Oficial (Versión Clara para Fondo Oscuro) -->
+        <!-- Logo de Marca Oficial -->
         <a href="#inicio" class="logo" id="brandLogo">
-          <img src="assets/logo-light.png" alt="Clic ID - Firmas Electrónicas Ecuador Black Week" class="brand-logo-img">
-          <span class="logo-distributor-badge">🖤 <strong>BLACK WEEK</strong> • ANF AC</span>
+          <img src="assets/logo.png" alt="Clic ID - Firmas Electrónicas Ecuador Black Week" class="brand-logo-img">
+          <span class="logo-distributor-badge">🖤 <strong>BLACK WEEK -50%</strong></span>
         </a>
 
         <!-- Enlaces de Navegación -->
@@ -67,7 +70,7 @@
           <li><a href="#calculadora">Calculadora</a></li>
           <li><a href="#requisitos">Requisitos</a></li>
           <li><a href="#proceso">¿Cómo Funciona?</a></li>
-          <li><a href="index.html">Ver Web Regular</a></li>
+          <li><a href="index.html">Web Regular</a></li>
         </ul>
 
         <!-- Botón CTA en Navbar -->
@@ -89,7 +92,7 @@
   </header>
 
   <!-- ==========================================================================
-       Hero Section BLACK WEEK
+       Hero Section (Diseño Luminoso Original + Sellos Black Week 50% OFF)
        ========================================================================== -->
   <section class="hero" id="inicio">
     <div class="container">
@@ -97,7 +100,7 @@
         <!-- Contenido Izquierdo -->
         <div class="hero-content">
           <div class="bw-hero-ribbon">
-            <span class="bw-fire">🔥 BLACK WEEK</span>
+            <span class="bw-fire">🖤 BLACK WEEK</span>
             <span>50% DE DESCUENTO EN TODAS LAS VIGENCIAS</span>
           </div>
 
@@ -106,18 +109,18 @@
           </h1>
 
           <p class="hero-subtitle">
-            Aprovecha la temporada de <strong>Black Week Clic ID</strong> y obtén tu firma electrónica en archivo <strong>.p12</strong> acreditada por <strong>ANF AC</strong> a mitad de precio. Válida para <strong>SRI, Quipux, Judicatura, SERCOP, SENAE y Supercias</strong>.
+            Aprovecha la temporada de <strong>Black Week Clic ID</strong> y obtén tu firma electrónica en archivo <strong>.p12</strong> respaldada por <strong>ANF Autoridad de Certificación</strong> a mitad de precio. Plena validez legal para <strong>SRI, Quipux, Judicatura, SERCOP, SENAE y Supercias</strong>.
           </p>
 
           <div class="hero-cta-group">
-            <a href="#precios" class="btn btn-bw-gold btn-lg" id="heroCtaPrecios">
+            <a href="#precios" class="btn btn-primary btn-lg" id="heroCtaPrecios">
               <span>🔥 Ver Planes 50% OFF desde $2.25</span>
             </a>
             <a href="https://wa.me/593980359264?text=Hola,%20quiero%20aprovechar%20la%20promoci%C3%B3n%20BLACK%20WEEK%20(50%25%20OFF)%20en%20mi%20firma%20electr%C3%B3nica" target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg" id="heroCtaWa">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
               </svg>
-              <span>Pedir Descuento por WhatsApp</span>
+              <span>Tramitar 50% OFF por WhatsApp</span>
             </a>
           </div>
 
@@ -145,7 +148,7 @@
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"/>
               </svg>
-              <span>Soporte Técnico de Instalación</span>
+              <span>Asistencia Técnica en Instalación</span>
             </div>
           </div>
         </div>
@@ -155,7 +158,7 @@
           <div class="floating-badge badge-top">
             <div class="badge-icon-wrap green">✓</div>
             <div>
-              <div style="font-size:0.75rem;color:#64748b;">Promoción Activa</div>
+              <div style="font-size:0.75rem;color:#64748b;">Estado de Emisión</div>
               <div style="color:#0f172a;">Aprobada para SRI y Quipux</div>
             </div>
           </div>
@@ -298,7 +301,7 @@
 
             <div class="calc-mascot-tip">
               <img src="assets/mascot-clicid.jpg" alt="Consejo Mascota Clic ID" class="mini-mascot-avatar">
-              <p style="font-size:0.88rem;margin-bottom:0;">
+              <p style="font-size:0.88rem;color:#475569;margin-bottom:0;">
                 <em>Consejo Black Week de Cliki:</em> En esta temporada puedes asegurar tu firma de <strong>2 años por solo $11.10</strong> o de <strong>5 años por solo $27.71</strong>.
               </p>
             </div>
@@ -308,8 +311,8 @@
             <div class="calc-label">Tu Descuento Black Week (-50%)</div>
             <div class="calc-savings-num" id="calcSavingsNum">$11.10</div>
             <div class="calc-details" id="calcDetails">En Black Week pagas solo $11.10 en vez del precio normal de $22.20 (¡50% de descuento directo!).</div>
-            <a href="https://wa.me/593980359264?text=Hola,%20quiero%20aprovechar%20el%2050%25%20OFF%20de%20BLACK%20WEEK%20en%20la%20firma%20de%202%20A%C3%B1os%20por%20$11.10" target="_blank" rel="noopener" class="btn btn-bw-gold btn-sm" id="calcWaBtn" style="width:100%;">
-              🔥 Reclamar 50% OFF por WhatsApp
+            <a href="https://wa.me/593980359264?text=Hola,%20quiero%20aprovechar%20el%2050%25%20OFF%20de%20BLACK%20WEEK%20en%20la%20firma%20de%202%20A%C3%B1os%20por%20$11.10" target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm" id="calcWaBtn" style="width:100%;">
+              Aprovechar 50% OFF por WhatsApp
             </a>
           </div>
         </div>
@@ -504,7 +507,7 @@
             </svg>
             <span>Reclamar 50% OFF por WhatsApp</span>
           </a>
-          <a href="#precios" class="btn btn-bw-gold btn-lg">
+          <a href="#precios" class="btn btn-outline btn-lg" style="background:#fff;color:#4c1d95;border:none;">
             Ver Tabla de Precios -50%
           </a>
         </div>
@@ -572,6 +575,75 @@
       </div>
     </div>
   </footer>
+
+  <!-- ==========================================================================
+       POP-UP PROMOCIONAL BLACK WEEK (Aparece automáticamente y al hacer clic en el botón flotante)
+       ========================================================================== -->
+  <div class="bw-popup-overlay" id="bwPromoPopupOverlay">
+    <div class="bw-popup-card">
+      <button type="button" class="bw-popup-close" id="bwPopupCloseBtn" aria-label="Cerrar Promoción">✕</button>
+
+      <div class="bw-popup-header">
+        <div class="bw-popup-tag">🖤 BLACK WEEK CLIC ID • OFERTA FLASH</div>
+        <div class="bw-popup-header-row">
+          <img src="assets/mascot-clicid.jpg" alt="Mascota Cliki Black Week" class="bw-popup-mascot">
+          <div class="bw-popup-discount-hero">
+            <div class="percent">50% OFF</div>
+            <div class="sub">En todas las Firmas Electrónicas</div>
+          </div>
+        </div>
+        <p>Mitad de precio sobre nuestra tarifa actual. Emisión oficial <strong>ANF AC</strong> en menos de 30 minutos.</p>
+      </div>
+
+      <div class="bw-popup-body">
+        <div class="bw-popup-mini-grid">
+          <div class="bw-popup-price-pill">
+            <div class="dur">⚡ 15 Días</div>
+            <div class="old">Antes $4.49</div>
+            <div class="now">$2.25</div>
+          </div>
+          <div class="bw-popup-price-pill">
+            <div class="dur">📄 1 Año</div>
+            <div class="old">Antes $18.20</div>
+            <div class="now">$9.10</div>
+          </div>
+          <div class="bw-popup-price-pill featured">
+            <div class="dur">⭐ 2 Años</div>
+            <div class="old">Antes $22.20</div>
+            <div class="now">$11.10</div>
+          </div>
+        </div>
+
+        <div class="bw-popup-timer-strip">
+          <span>⏳ El descuento del 50% termina en:</span>
+          <strong id="bwPopupTimer">05h : 38m : 45s</strong>
+        </div>
+
+        <div class="bw-popup-actions">
+          <a href="https://wa.me/593980359264?text=Hola,%20vi%20el%20Pop-up%20de%20BLACK%20WEEK%20y%20quiero%20reclamar%20el%2050%25%20de%20descuento%20en%20mi%20firma%20electr%C3%B3nica" target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg" style="width:100%;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
+            <span>Reclamar 50% OFF por WhatsApp</span>
+          </a>
+          <a href="#precios" class="btn btn-primary btn-sm" id="bwPopupSeePlansBtn" style="width:100%;">
+            🔥 Ver Todos los Planes con 50% de Descuento
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Botón / Sticker Flotante Inferior Izquierdo para Abrir el Pop-up Black Week
+       ========================================================================== -->
+  <button type="button" class="bw-floating-launcher" id="bwFloatingLauncher" aria-label="Abrir Cupón Black Week 50% OFF">
+    <span class="bw-launcher-badge">-50%</span>
+    <span class="bw-launcher-text">
+      <span class="title">🖤 BLACK WEEK</span>
+      <span class="sub">Ver Cupón 50% OFF</span>
+    </span>
+  </button>
 
   <!-- ==========================================================================
        Widget Flotante de WhatsApp BLACK WEEK
@@ -665,14 +737,14 @@
     <div class="modal-card">
       <button class="modal-close-btn" id="modalCloseBtn" aria-label="Cerrar Ventana">✕</button>
       
-      <img src="assets/logo-light.png" alt="Clic ID Black Week" class="modal-logo-img">
+      <img src="assets/logo.png" alt="Clic ID Black Week" class="modal-logo-img">
       <h3 class="modal-title" style="text-align:center;">Solicitud Black Week (-50% OFF)</h3>
       <p class="modal-subtitle" style="text-align:center;">Completa tus datos y te atenderemos de inmediato por WhatsApp con tu descuento aplicado.</p>
 
       <div class="modal-plan-summary" id="modalPlanSummary">
         <div>
           <div class="summary-title">Persona Natural - 2 Años (BLACK WEEK -50%)</div>
-          <small style="color: #fbbf24;">Distribuidor Autorizado ANF AC</small>
+          <small style="color: #64748b;">Distribuidor Autorizado ANF AC</small>
         </div>
         <div class="summary-price">$11.10</div>
       </div>
@@ -711,6 +783,6 @@
   </div>
 
   <!-- JavaScript Black Week -->
-  <script src="black-week.js?v=1"></script>
+  <script src="black-week.js?v=2"></script>
 </body>
 </html>
